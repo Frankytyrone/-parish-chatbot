@@ -22,8 +22,8 @@ with fitz.open("merged1 (1).pdf") as doc:
 def answer_query(query, text):
     query_lower = query.lower()
     lines = text.split('')
-    matched_lines = [line for line in lines if query_lower in line.lower()] return "
-".join(matched_lines[:10]) if matched_lines else "Sorry, no relevant information found."
+    matched_lines = [line for line in lines if query_lower in line.lower()] 
+    return "".join(matched_lines[:10]) if matched_lines else "Sorry, no relevant information found."
 
 if user_query:
     response = answer_query(user_query, bulletin_text)
