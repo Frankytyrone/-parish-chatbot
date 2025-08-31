@@ -21,6 +21,9 @@ with fitz.open("merged1 (1).pdf") as doc:
 # Simple keyword-based response logic
 def answer_query(query, text):
     query_lower = query.lower()
+    File "/mount/src/-parish-chatbot/parish_chatbot_app (1).py", line 29, in <module>
+    response = answer_query(user_query, bulletin_text)
+File "/mount/src/-parish-chatbot/parish_chatbot_app (1).py", line 24, in answer_query
     lines = text.split('')
     matched_lines = [line for line in lines if query_lower in line.lower()] 
     return "".join(matched_lines[:10]) if matched_lines else "Sorry, no relevant information found."
