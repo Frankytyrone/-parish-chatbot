@@ -16,9 +16,7 @@ user_query = st.text_input('Your question:')
 
 # Load bulletin text from PDF
 with fitz.open("merged1 (1).pdf") as doc:
-    bulletin_text = "
-".join([page.get_text() for page in doc])
-
+   bulletin_text = "\n".join ([page.get_text() for page in doc])
 # Simple keyword-based response logic
 def answer_query(query, text):
     query_lower = query.lower()
