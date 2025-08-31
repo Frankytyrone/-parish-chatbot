@@ -20,7 +20,7 @@ with fitz.open("merged1 (1).pdf") as doc:
 # Simple keyword-based response logic
 def answer_query(query, text):
     query_lower = query.lower()
-    lines = text.split('
+   lines = text.split('\n')
 ')
     matched_lines = [line for line in lines if query_lower in line.lower()]
     return "
