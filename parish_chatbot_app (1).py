@@ -21,6 +21,7 @@ with fitz.open("merged1 (1).pdf") as doc:
 # Simple keyword-based response logic
 def answer_query(query, text):
     query_lower = query.lower()
+    lines = text.split('')
     File "/mount/src/-parish-chatbot/parish_chatbot_app (1).py", line 29, in <module>
     response = answer_query(user_query, bulletin_text)
 File "/mount/src/-parish-chatbot/parish_chatbot_app (1).py", line 24, in answer_query
